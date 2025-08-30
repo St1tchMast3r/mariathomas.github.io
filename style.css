@@ -7,20 +7,67 @@
 /* minimal, clean, mobile-first */
 * { box-sizing: border-box; }
 html, body { margin:0; padding:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6; }
+html {
+  scroll-behavior: smooth;
+}
 a { text-decoration: none; }
 a:hover, a:focus { text-decoration: underline; }
+/* make nav links match button style */
+.nav a {
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+
+.nav a:hover,
+.nav a:focus {
+  color: #0056b3; /* darker blue on hover */
+  text-decoration: none;
+}
+/* highlight active nav link */
+.nav a.active {
+  color: #0056b3;           /* darker blue */
+  font-weight: 700;
+  border-bottom: 2px solid #0056b3; /* underline effect */
+}
+
 .site-header { position: sticky; top:0; background:#fff; border-bottom:1px solid #eee; }
 .nav { max-width: 960px; margin: 0 auto; padding: .75rem 1rem; display:flex; gap:1rem; justify-content:flex-end; }
 .nav .resume { margin-left:auto; font-weight:600; }
 .hero { max-width: 960px; margin: 0 auto; padding: 4rem 1rem 2rem; text-align:center; }
 .hero h1 { font-size: clamp(2rem, 6vw, 3rem); margin:.25rem 0; }
 .tagline { font-weight:600; opacity:.85; margin:.25rem 0 1rem; }
-.btn { display:inline-block; padding:.7rem 1rem; border:1px solid #111; border-radius:.6rem; }
+
+/* consistent button style for all buttons */
+.btn {
+  display:inline-block;
+  padding:.7rem 1.2rem;
+  border:1px solid #007bff;
+  border-radius:.6rem;
+  background-color:#007bff; /* blue background */
+  color:white;
+  font-weight:600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color:#0056b3; /* darker blue on hover */
+  text-decoration:none;
+}
+
 .section { max-width: 960px; margin: 0 auto; padding: 2rem 1rem; }
 .section.alt { background:#fafafa; }
 h2 { margin-top:0; }
 .bullets { margin:.5rem 0 0 1rem; }
-.site-footer { border-top:1px solid #eee; text-align:center; padding:1rem;
+
+.site-footer { 
+  border-top:1px solid #eee; 
+  text-align:center; 
+  padding:1rem; 
+}
+
+/* profile picture */
 .profile-pic {
   width: 180px;
   height: 180px;

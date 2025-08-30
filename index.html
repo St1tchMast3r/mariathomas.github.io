@@ -1,0 +1,73 @@
+<!-- 
+  Created by Maria Thomas for DASC 620 HW1.
+  Structure and style inspired by examples generated with ChatGPT.
+  I have reviewed, understood, and customized the code to fit my project.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maria Thomas — Portfolio</title>
+  <meta name="description" content="DASC 620 HW1 — web portfolio with resume.">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <a class="resume" href="resume.pdf" download>Resume (PDF)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="name">
+      <h1 id="name">Maria Thomas</h1>
+      <p class="tagline">AI Educator & AP Statistics Teacher @ Norfolk Public Schools</p>
+      <p><a class="btn" href="resume.pdf" download>Download Resume</a></p>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I’m Maria Thomas, an Instructional Technology Resource Teacher and AP Statistics
+        instructor at Norfolk Public Schools. I specialize in technology integration,
+        data-driven teaching, and the responsible use of AI to support educators and students.
+      </p>
+      <ul class="bullets">
+        <li>Instructional Technology Resource Teacher (2018–present)</li>
+        <li>AP Statistics Teacher (Norview High School, 2023–present)</li>
+        <li>NBCT in Mathematics • ISTE Certified AI Educator</li>
+      </ul>
+    </section>
+
+    <section id="portfolio" class="section alt">
+      <h2>Digital Portfolio</h2>
+      <p>
+        You can explore my complete digital portfolio here:  
+        <a href="https://www.canva.com/design/DAGupZ2xKaA/foD2UQWND9K1vyhq3LHQ-A/view?utm_content=DAGupZ2xKaA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h75558cad55" target="_blank">View Portfolio on Canva</a>
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:maria.solock@gmail.com">maria.solock@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/mariathomas">github.com/mariathomas</a></p>
+      <p>Location: Norfolk, VA</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Maria Thomas • Built for DASC 620 HW1</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

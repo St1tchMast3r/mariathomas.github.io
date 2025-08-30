@@ -21,3 +21,19 @@ a:hover, a:focus { text-decoration: underline; }
 h2 { margin-top:0; }
 .bullets { margin:.5rem 0 0 1rem; }
 .site-footer { border-top:1px solid #eee; text-align:center; padding:1rem;
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /* circle */
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #ddd;
+}
+
+/* shrink the picture on smaller screens */
+@media (max-width: 600px) {
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+}
